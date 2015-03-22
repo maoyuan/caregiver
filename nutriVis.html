@@ -51,6 +51,16 @@
         .float-left{
             float:left;
         }
+        polyline{
+            opacity: .3;
+            stroke: black;
+            stroke-width: 2px;
+            fill: none;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+        }
         
     </style>
 
@@ -122,7 +132,7 @@
 	<div id="lineCharts" style = "width:1422px;">
 
 		<div class ="row bg-white" style = "width:1422px;">
-        <div class="col-md-6 float-left">
+        <div class="col-md-5 float-left">
             <div id="theArt">
                 <div id="cube" class="show-front">
                   
@@ -175,7 +185,11 @@
                 </div>
             </div>
             </div>
-            <div class = "col-md-6 move-down">
+            <div class = "col-md-4 move-down">                
+                 <div id="pie" style="height:750px;"></div>
+            </div>
+            
+            <div class = "col-md-3 move-down">
                 <div class="panel panel-default">
                   <div class="panel-heading">My Recent Recipe</div>
                   <div class="panel-body">
@@ -252,6 +266,146 @@
             y_label:'gram',
         })
     });
-</script>	    
+</script>	  
+<script>
+
+var svg = d3.select("#pie")
+	.append("svg")
+	.append("g")
+
+svg.append("g")
+	.attr("class", "slices");
+svg.append("g")
+	.attr("class", "labels");
+svg.append("g")
+	.attr("class", "lines");
+
+var width = 960,
+    height = 450,
+	radius = Math.min(width, height) / 3.2;
+
+var pie = d3.layout.pie()
+	.sort(null)
+	.value(function(d) {
+		return d.value;
+	});
+
+var arc = d3.svg.arc()
+	.outerRadius(radius * 0.8)
+	.innerRadius(radius * 0.4);
+
+var outerArc = d3.svg.arc()
+	.innerRadius(radius * 0.9)
+	.outerRadius(radius * 0.9);
+
+svg.attr("transform", "translate(" + width / 4.5 + "," + height / 2.5 + ")");
+
+var key = function(d){ return d.data.label; };
+
+var color = d3.scale.ordinal()
+	.range(["#8a89a6", "#7b6888", "#a05d56", "#ff8c00"]);
+
+
+var dataArr = [{label:"fat 20%", value:"0.2"},{label:"surger 30%", value:"0.3"},{label:"protein 40%", value:"0.4"},{label:"sodium 1%", value:"0.01"}]
+change(dataArr);
+
+d3.select(".randomize")
+	.on("click", function(){
+		change(randomData());
+	});
+
+
+function change(data) {
+
+	/* ------- PIE SLICES -------*/
+	var slice = svg.select(".slices").selectAll("path.slice")
+		.data(pie(data), key);
+
+	slice.enter()
+		.insert("path")
+		.style("fill", function(d) { return color(d.data.label); })
+		.attr("class", "slice");
+
+	slice		
+		.transition().duration(1000)
+		.attrTween("d", function(d) {
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function(t) {
+				return arc(interpolate(t));
+			};
+		})
+
+	slice.exit()
+		.remove();
+
+	/* ------- TEXT LABELS -------*/
+
+	var text = svg.select(".labels").selectAll("text")
+		.data(pie(data), key);
+
+	text.enter()
+		.append("text")
+		.attr("dy", ".35em")
+		.text(function(d) {
+			return d.data.label;
+		});
+	
+	function midAngle(d){
+		return d.startAngle + (d.endAngle - d.startAngle)/2;
+	}
+
+	text.transition().duration(1000)
+		.attrTween("transform", function(d) {
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function(t) {
+				var d2 = interpolate(t);
+				var pos = outerArc.centroid(d2);
+				pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
+				return "translate("+ pos +")";
+			};
+		})
+		.styleTween("text-anchor", function(d){
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function(t) {
+				var d2 = interpolate(t);
+				return midAngle(d2) < Math.PI ? "start":"end";
+			};
+		});
+
+	text.exit()
+		.remove();
+
+	/* ------- SLICE TO TEXT POLYLINES -------*/
+
+	var polyline = svg.select(".lines").selectAll("polyline")
+		.data(pie(data), key);
+	
+	polyline.enter()
+		.append("polyline");
+
+	polyline.transition().duration(1000)
+		.attrTween("points", function(d){
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function(t) {
+				var d2 = interpolate(t);
+				var pos = outerArc.centroid(d2);
+				pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+				return [arc.centroid(d2), outerArc.centroid(d2), pos];
+			};			
+		});
+	
+	polyline.exit()
+		.remove();
+};
+
+</script>  
 </body>
 </html>
