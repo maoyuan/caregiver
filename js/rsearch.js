@@ -70,9 +70,9 @@ $(document).ready(function() {
                     htmlcode += '<p>'+ ingreArr[0] + '</p>';
                     htmlcode += '<p>'+ ingreArr[1] +'</p>';
                     htmlcode += '<p> ... </p>';
-                    htmlcode += '<button type="button" class="btn btn-default" data-toggle="modal" data-target="#' + modalid+'">Detail Receipe </button>';
+                    htmlcode += '<button type="button" class="btn btn-default btn-sm receipe-detail" data-toggle="modal" data-target="#' + modalid+'">Detail Receipe </button>';
                     //htmlcode += '<input type = "text" class = "dp6" value = "" data-date-format = "mm-dd-yy" ></input>';
-                    htmlcode += '<button type="button" class="btn btn-default" data-toggle="modal" data-target="#calendar">Add to Favorite</button>';
+                    htmlcode += '<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#calendar">Add to Favorite</button>';
 
                     htmlcode += '</div></td></tr>';
                     
@@ -89,7 +89,7 @@ $(document).ready(function() {
                     for(e in preArr){
                         popcode += '<p>' + preArr[e] + '</p>';
                     }             
-                    popcode += '</div></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Add to Favorite</button><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>';
+                    popcode += '</div></div><div class="modal-footer"><button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Add to Favorite</button><button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button></div></div></div></div>';
                     
                     $("#popup").append(popcode);
                 }
