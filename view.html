@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/lib/metricsgraphics.css"/>
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.0/d3.min.js' charset='utf-8'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	
+
+    <link href='js/lib/dist/metricsgraphics.css' rel='stylesheet' type='text/css'>
+    <script src='js/lib/dist/metricsgraphics.min.js'></script>    
+    <link href="css/lib/datepicker.css" rel="stylesheet">
+    <script src='js/lib/bootstrap-datepicker.js'></script>  
+
+
+
+	<title>Caregiver Recipe</title>
+</head>
+<body>
+
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container-fluid">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand">Caregiver Recipe</a>
+	        </div>
+
+	        <div class="collapse navbar-collapse bs-navbar-collapse">
+	        	<ul class="nav navbar-nav navbar-right">
+	    			<li>
+	    				<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+					</li>
+	    			<li>
+	    				<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+					</li>
+	    			<li>
+	    				<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+					</li>
+				</ul>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="col-md-6">
+				
+
+					<div class="panel panel-default">
+  						<div class="panel-heading">Panel heading without title</div>
+					</div>
+
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">User Activity Per Week</h3>
+				  </div>
+				  <div class="panel-body">
+				      <div class='container'>
+               			 <div id='ufo-sightings'></div>
+    					</div>
+				    <script>
+				  					 
+				    				//hljs.initHighlightingOnLoad();
+
+				    			  d3.json('data/activity.json', function(data) {
+								    MG.data_graphic({
+								        data: data,
+								        width: 450,
+								        height: 150,
+								        target: '#ufo-sightings',
+								        x_accessor: 'Day',
+								        y_accessor: 'Value',
+								    })
+								});
+
+
+					  </script>	
+
+				  </div>
+				</div>
+
+
+
+			</div>
+
+			<div class="col-md-3">
+				<div> test </div>
+					 <div id="dp6" data-date="12-02-2012" data-date-format="dd-mm-yyyy"></div>
+					 <script>  //inline    
+				            $('#dp6').datepicker({
+				                todayBtn: 'linked'
+				            });
+             </script>
+			</div>
+
+			<div class="col-md-3">
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
