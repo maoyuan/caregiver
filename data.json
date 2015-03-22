@@ -1,0 +1,34 @@
+[  
+   {  
+      "name":"Chicken Piccata with Pasta",
+      "ingredients":"8 ounces angel hair pasta===6 (4-ounce) chicken cutlets (about 1/8 inch thick)===1/2 teaspoon kosher salt===1/4 teaspoon freshly ground black pepper===1 1/2 tablespoons olive oil===4 tablespoons unsalted butter===2 tablespoons minced shallot===1/4 cup fresh lemon juice===1/2 cup dry white wine===2 tablespoons capers, drained===2 tablespoons flat-leaf parsley, chopped and divided",
+      "directions":"Prepare pasta according to package directions.===Meanwhile, sprinkle both sides of chicken with salt and pepper. Heat olive oil in a large skillet over medium-high heat; add chicken and cook 2 to 3 minutes on each side or until brown and cooked through. Remove chicken to a plate, and keep warm. Wipe skillet clean.===Melt 1 tablespoon butter in skillet over medium-high heat; add shallot and sauté, stirring often, 30 seconds or until tender. Add lemon juice, wine, and capers; bring to a gentle boil. Boil 1 to 2 minutes or until reduced slightly. Remove skillet from heat, and stir in remaining 3 tablespoons butter until melted. Stir in 1 tablespoon parsley.===Slice chicken cutlets into 1-inch pieces; arrange over prepared pasta, and pour caper sauce over chicken. Sprinkle with remaining 1 tablespoon parsley.",
+      "image":"1.jpg",
+      "complexity":"beginner",
+      "time":"10"
+   },
+   {  
+      "name":"Chicken Parmesan",
+      "ingredients":"4 skinless, boneless chicken breast halves===salt and freshly ground black pepper to taste===2 eggs===4 cups panko bread crumbs===1/2 cup grated Parmesan cheese===2 tablespoons all-purpose flour, or more if needed===1 cup olive oil for frying===1/2 cup prepared tomato sauce===1/4 cup fresh mozzarella, cut into small cubes===1/4 cup chopped fresh basil===1/2 cup grated provolone cheese===1/4 cup grated Parmesan cheese===1 tablespoon olive oil",
+      "directions":"Preheat an oven to 450 degrees F (230 degrees C).===Place chicken breasts between two sheets of heavy plastic (resealable freezer bags work well) on a solid, level surface. Firmly pound chicken with the smooth side of a meat mallet to a thickness of 1/2-inch. Season chicken thoroughly with salt and pepper.===Beat eggs in a shallow bowl and set aside.===Mix bread crumbs and 1/2 cup Parmesan in a separate bowl, set aside.===Place flour in a sifter or strainer; sprinkle over chicken breasts, evenly coating both sides.===Dip flour coated chicken breast in beaten eggs. Transfer breast to breadcrumb mixture, pressing the crumbs into both sides. Repeat for each breast. Set aside breaded chicken breasts for about 15 minutes.===Heat 1 cup olive oil in a large skillet on medium-high heat until it begins to shimmer. Cook chicken until golden, about 2 minutes on each side. The chicken will finish cooking in the oven.===Place chicken in a baking dish and top each breast with about 1/3 cup of tomato sauce. Layer each chicken breast with equal amounts of mozzarella cheese, fresh basil, and provolone cheese. Sprinkle 1 to 2 tablespoons of Parmesan cheese on top and drizzle with 1 tablespoon olive oil.===Bake in the preheated oven until cheese is browned and bubbly, and chicken breasts are no longer pink in the center, 15 to 20 minutes. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).",
+      "image":"2.jpg",
+      "complexity":"intermedia",
+      "time":"20"
+   },
+   {  
+      "name":"Slow Cooker Chicken Taco Soup",
+      "ingredients":"1 onion, chopped===1 (16 ounce) can chili beans===1 (15 ounce) can black beans===1 (15 ounce) can whole kernel corn, drained===1 (8 ounce) can tomato sauce===1 (12 fluid ounce) can or bottlebeer===2 (10 ounce) cans diced tomatoes with green chilies, undrained===1 (1.25 ounce) package taco seasoning===3 whole skinless, boneless chicken breasts===shredded Cheddar cheese(optional)===sour cream (optional)===crushed tortilla chips (optional)",
+      "directions":"Place the onion, chili beans, black beans, corn, tomato sauce, beer, and diced tomatoes in a slow cooker. Add taco seasoning, and stir to blend. Lay chicken breasts on top of the mixture, pressing down slightly until just covered by the other ingredients. Set slow cooker for low heat, cover, and cook for 5 hours.===Remove chicken breasts from the soup, and allow to cool long enough to be handled. Stir the shredded chicken back into the soup, and continue cooking for 2 hours. Serve topped with shredded Cheddar cheese, a dollop of sour cream, and crushed tortilla chips, if desired.",
+      "image":"3.jpg",
+      "complexity":"intermedia",
+      "time":"20"
+   },
+   {  
+      "name":"Baked Teriyaki Chicken",
+      "ingredients":"1 tablespoon cornstarch===1 tablespoon cold water===1/2 cup white sugar===1/2 cup soy sauce===1/4 cup cider vinegar===1 clove garlic, minced===1/2 teaspoon ground ginger===1/4 teaspoon ground black pepper===12 skinless chicken thighs",
+      "directions":"In a small saucepan over low heat, combine the cornstarch, cold water, sugar, soy sauce, vinegar, garlic, ginger and ground black pepper. Let simmer, stirring frequently, until sauce thickens and bubbles.===Preheat oven to 425 degrees F (220 degrees C).===Place chicken pieces in a lightly greased 9x13 inch baking dish. Brush chicken with the sauce. Turn pieces over, and brush again.===Bake in the preheated oven for 30 minutes. Turn pieces over, and bake for another 30 minutes, until no longer pink and juices run clear. Brush with sauce every 10 minutes during cooking.",
+      "image":"4.jpg",
+      "complexity":"intermedia",
+      "time":"20"
+   }
+]
