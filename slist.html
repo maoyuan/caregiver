@@ -50,7 +50,7 @@
 					<label>From:</label>
 				</div>
 				<div class='input-group date col-md-9' id='slist_start_calendar'>
-					<input type='text' class="form-control" />
+					<input type='text' class="form-control" id='slist_start_date'/>
 					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
 				</div>		
 			</div>
@@ -60,9 +60,14 @@
 					<label>To:</label>
 				</div>
 				<div class='input-group date col-md-9' id='slist_end_calendar'>
-					<input type='text' class="form-control" />
+					<input type='text' class="form-control" id='slist_end_date'/>
 					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
 				</div>				
+			</div>
+
+			<div id="slist_calendar_ctrl">
+				<a href="#" class="btn btn-default btn-xs" id="slist_calendar_ok">Confirm</a>
+				<a href="#" class="btn btn-default btn-xs" id="slist_calendar_cancel">Cancel</a>				
 			</div>
 			<hr>
 

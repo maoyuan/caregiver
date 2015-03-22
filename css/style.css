@@ -98,7 +98,7 @@ body {
 }
 
 #slist_recipe_list { 
-	height: 400px;
+	height: 370px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: rgba(0, 0, 0, 0.1	);
@@ -117,4 +117,9 @@ body {
 	height: 540px;
 	overflow-y: auto;
 	overflow-x: hidden; 
+}
+
+#slist_calendar_ctrl {
+	margin-top: 20px;
+	margin-left: 200px;
 }
