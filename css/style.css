@@ -98,7 +98,7 @@ body {
 }
 
 #slist_recipe_list { 
-	height: 370px;
+	height: 360px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: rgba(0, 0, 0, 0.1	);
@@ -123,3 +123,11 @@ body {
 	margin-top: 20px;
 	margin-left: 200px;
 }
+
+#slist_recipe_table { font-size: 0.9em;}
+#slist_recipe_table:hover {
+	cursor: pointer;
+}
+
+.slist-remove { border-width: 0px; }
+.slist-edit { border-width: 0px; }
