@@ -14,7 +14,7 @@
   	<script type="text/javascript" src="js/lib/jquery-ui.js"></script>    
     <script src='js/lib/bootstrap-datepicker.js'></script>  
 
-	<title>Caregiver Recipe</title>
+	<title>CareFood</title>
 </head>
 <body>
     <div id = "popup">        
@@ -91,53 +91,57 @@
 				</div>
 				<hr>
 
-				<div id="rsearch_restriction_container">
-					<label><i class="fa fa-h-square"></i> Medical Adaptations</label><br/>
-					<select id="rsearch_restriction" multiple="multiple">
-					    <option value="lsugar">Low Sugar</option>
-					    <option value="tomatoes">Low Sodium</option>
-					    <option value="mozarella">Low Fat</option>
-						<option value="mozarella">Low Cholestrol</option>					    
-					</select>					
-				</div>
-				<hr>
-
-<!-- 				<div id="rsearch_rating_container">
-					<label><i class="fa fa-thumbs-o-up"></i> Rating</label><br/>
-					<div class="btn-group" id="rsearch_rating">
-						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
-						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
-						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
-						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
-						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+				<div>
+					
+					<div id="rsearch_restriction_container">
+						<label><i class="fa fa-h-square"></i> Medical Adaptations</label><br/>
+						<select id="rsearch_restriction" multiple="multiple">
+						    <option value="lsugar">Low Sugar</option>
+						    <option value="tomatoes">Low Sodium</option>
+						    <option value="mozarella">Low Fat</option>
+							<option value="mozarella">Low Cholestrol</option>					    
+						</select>					
 					</div>
-				</div>
-				<hr> -->
+					<hr>
 
-				<div id="rsearch_time_container">
-					<label><i class="fa fa-clock-o"></i> Preparation Time</label><br/>
-					<select id="rsearch_time">
-					    <option value="10min">10 min</option>
-					    <option value="30min">30 min</option>
-					    <option value="60min">1 hour</option>
-					</select>
-				</div>
-				<hr>
+	<!-- 				<div id="rsearch_rating_container">
+						<label><i class="fa fa-thumbs-o-up"></i> Rating</label><br/>
+						<div class="btn-group" id="rsearch_rating">
+							<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+							<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+							<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+							<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+							<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+						</div>
+					</div>
+					<hr> -->
 
-				<div id="rsearch_difficulty_container">
-					<label>Complexity for Cooking</label><br/>
-					<select id="rsearch_difficulty">
-					    <option value="beginer">Beginner Level</option>
-					    <option value="intermediate">Intermediate Level</option>
-					    <option value="advanced">Advanced Level</option>
-					</select>
+					<div id="rsearch_time_container">
+						<label><i class="fa fa-clock-o"></i> Preparation Time</label><br/>
+						<select id="rsearch_time">
+						    <option value="10min">10 min</option>
+						    <option value="30min">30 min</option>
+						    <option value="60min">1 hour</option>
+						</select>
+					</div>
+					<hr>
+
+					<div id="rsearch_difficulty_container">
+						<label>Complexity for Cooking</label><br/>
+						<select id="rsearch_difficulty">
+						    <option value="beginer">Beginner Level</option>
+						    <option value="intermediate">Intermediate Level</option>
+						    <option value="advanced">Advanced Level</option>
+						</select>
+					</div>
+
 				</div>
-				<hr>
+
 			</div>
 
 			<div class="col-md-7 col-md-offset-1">
 
-				<div class="panel panel-default" >
+				<div class="panel panel-default shade-container" >
 					<div class="panel-heading" ><i class="fa fa-list-ul"></i> Recipes</div>
 					<div class="panel-body" id="rsearch_recipes_list">
 						<table class="table" id = 'nutrition'>
