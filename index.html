@@ -5,16 +5,54 @@
 	<link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap-multiselect.css"/>
 	<link rel="stylesheet" href="./css/lib/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>       
+    <link href="css/lib/datepicker.css" rel="stylesheet">
 
     <script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lib/bootstrap-multiselect.js"></script>
-  	<script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+  	<script type="text/javascript" src="js/lib/jquery-ui.js"></script>    
+    <script src='js/lib/bootstrap-datepicker.js'></script>  
 
 	<title>Caregiver Recipe</title>
 </head>
 <body>
+    <div id = "popup">        
+    </div>
+    <div class="modal fade" id="calendar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Food Calendar</h4>
+      </div>
+      <div class="modal-body">
+      <div class = "row">
+        <div class = "col-md-6">
+            <div class="dp6" data-date="12-02-2012" data-date-format="dd-mm-yyyy"></div>
+        </div>
+        <div class = "col-md-6">
+            <div class = "radio">
+                <label><input type = "radio" name = "opt" checked>breakfast</input></label>
+            </div>
+            <div class = "radio">
+                <label><input type = "radio" name = "opt">lunch</input></label>
+            </div>
+            <div class = "radio">
+                <label><input type = "radio" name = "opt">diner</input></label>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+        
+      </div>
+    </div>
+    
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    <div class="container-fluid">
 	        <div class="navbar-header">
