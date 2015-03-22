@@ -1,0 +1,130 @@
+body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#pheader {
+    margin-bottom: 10px;
+}
+#slider h2 {
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 55px;
+    font-family: "trebuchet ms", sans-serif;
+}
+.item {
+    background: #a0a0a0;
+    text-align: center;
+    height: 460px !important;
+}
+.carousel {
+    margin-top: 20px;
+}
+#slider {
+    margin-top: 35px;
+}
+#discription {
+    text-align: center;
+    margin-top: 25px;
+}
+#pregister {
+    margin-top: 35px;
+    height: 380px;
+}
+#forgetPass {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.control-group {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#rtab {
+    height: 360px;
+}
+#trydemo {
+    text-align: center;
+}
+#ds_btn {
+    width: 60%;
+}
+.demo_cp_label {
+    margin-bottom: 15px;
+}
+#bic_dist text.bicHistLabel {
+    fill: #ffffff;
+    font-size: 12px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-anchor: end;
+}
+.histBar {
+    fill: #78b5f2;
+}
+.histBar:hover {
+    cursor: pointer;
+    fill: #3399FF;
+}
+fieldset.field-border {
+    border: 1px groove #fff !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+legend.field-border {
+    font-size: 1.1em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+}
+#demo_workspace {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+#demo_workspace_canvas {
+    height: 300px;
+}
+#demo_table_view {
+    padding-left: 25px;
+}
+#demo_table {
+    width: 100%;
+}
+#main_logout {
+    margin-left: 80px;
+}
+.main_nav_terms {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a.main_nav_current {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    color: #666;
+}
+#main_tab {
+    height: 650px;
+}
+div.radio {
+    display: inline;
+}
+#visability_no{
+    margin-left: 40px;
+}
+#algo_run {
+    margin-left: 10px;
+    margin-top: -10px;
+}
+#main_data_preview {
+    margin-top: 15px;    
+}
+#main_table_view {
+    height: 320px;
+}
+#main_console_view {
+    height: 90px;
+}
