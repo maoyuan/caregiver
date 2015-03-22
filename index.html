@@ -73,9 +73,6 @@
 	    			<li>
 	    				<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
 					</li>
-	    			<li>
-	    				<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
-					</li>
 				</ul>
 	        </div>
 	    </div>
@@ -95,11 +92,12 @@
 				<hr>
 
 				<div id="rsearch_restriction_container">
-					<label><i class="fa fa-flag-o"></i> Restrictions</label><br/>
+					<label><i class="fa fa-h-square"></i> Medical Adaptations</label><br/>
 					<select id="rsearch_restriction" multiple="multiple">
-					    <option value="cheese">Cheese</option>
-					    <option value="tomatoes">Tomatoes</option>
-					    <option value="mozarella">Mozzarella</option>
+					    <option value="lsugar">Low Sugar</option>
+					    <option value="tomatoes">Low Sodium</option>
+					    <option value="mozarella">Low Fat</option>
+						<option value="mozarella">Low Cholestrol</option>					    
 					</select>					
 				</div>
 				<hr>
@@ -139,10 +137,12 @@
 
 			<div class="col-md-7 col-md-offset-1">
 
-				<div class="panel panel-default">
+				<div class="panel panel-default" >
 					<div class="panel-heading" ><i class="fa fa-list-ul"></i> Recipes</div>
-					<table class="table" id = 'nutrition'>
-					</table>
+					<div class="panel-body" id="rsearch_recipes_list">
+						<table class="table" id = 'nutrition'>
+						</table>
+					</div>
 				</div>
 			</div>
 
