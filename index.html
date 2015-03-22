@@ -2,17 +2,18 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap-multiselect.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    <script type="text/javascript" src="js/lib/angular.min.js"/>
-    <script type="text/javascript" src="js/lib/bootstrap.min.js"/>
-    <script type="text/javascript" src="js/lib/moment.min.js"/>
-    <script type="text/javascript" src="js/lib/ui-bootstrap-tpls.min.js"/>
+    <script type="text/javascript" src="./js/lib/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/lib/bootstrap-multiselect.js"></script>
+
 
 	<title>Caregiver Recipe</title>
 </head>
 <body>
-
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    <div class="container-fluid">
 	        <div class="navbar-header">
@@ -22,7 +23,7 @@
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	            </button>
-	            <a class="navbar-brand">Caregiver Recipe</a>
+	            <a class="navbar-brand" id="carefood"><h1>CareFood</h1></a>
 	        </div>
 
 	        <div class="collapse navbar-collapse bs-navbar-collapse">
@@ -41,19 +42,79 @@
 	    </div>
 	</div>
 
-	<div class="container-fluid">
+	<div class="container-fluid" id="recipe_selection_content">
 		<div class="col-md-12 col-sm-12 col-xs-12">
-			<div class="col-md-3">
-				
+			<div class="col-xs-12 col-md-2">
+				<div id="rsearch_recipe">
+					<form id="search-form" class="form-inline" role="form" method="post" action="//www.google.com/search" target="_blank">
+					    <div class="input-group">
+					        <input type="text" class="form-control search-form" placeholder="Search">
+					        <span class="input-group-btn">
+					        	<button type="submit" class="btn btn-info search-btn" data-target="#search-form" name="q"><i class="fa fa-search"></i></button>
+				        	</span>
+					    </div>
+					</form>	
+				</div>
+				<hr>
+
+				<div id="rsearch_restriction_container">
+					<label><i class="fa fa-flag-o"></i> Restrictions</label><br/>
+					<select id="rsearch_restriction" multiple="multiple">
+					    <option value="cheese">Cheese</option>
+					    <option value="tomatoes">Tomatoes</option>
+					    <option value="mozarella">Mozzarella</option>
+					</select>					
+				</div>
+				<hr>
+
+				<div id="rsearch_rating_container">
+					<label><i class="fa fa-thumbs-o-up"></i> Rating</label><br/>
+					<div class="btn-group" id="rsearch_rating">
+						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+						<i class="fa fa-star-o btn btn-default btn_rsearch_rating"></i>
+					</div>
+				</div>
+				<hr>
+
+				<div id="rsearch_time_container">
+					<label><i class="fa fa-clock-o"></i> Preparation Time</label><br/>
+					<select id="rsearch_time">
+					    <option value="10min">10 min</option>
+					    <option value="30min">30 min</option>
+					    <option value="60min">1 hour</option>
+					</select>
+				</div>
+				<hr>
+
+				<div id="rsearch_difficulty_container">
+					<label>Complexity for Cooking</label><br/>
+					<select id="rsearch_difficulty">
+					    <option value="beginer">Beginner Level</option>
+					    <option value="intermediate">Intermediate Level</option>
+					    <option value="advanced">Advanced Level</option>
+					</select>
+				</div>
+				<hr>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-8">
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-2">
+				<form action="" class="search-form">
+	                <div class="form-group has-feedback">
+	            		<label for="search" class="sr-only">Search</label>
+	            		<input type="text" class="form-control" name="search" id="search" placeholder="search...">
+	              		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+	            	</div>
+	            </form>
 			</div>
 		</div>
 	</div>
 
+    <script type="text/javascript" src="./js/rsearch.js"></script>
 </body>
 </html>
