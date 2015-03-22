@@ -18,6 +18,10 @@ body {
 }*/
 
 
+.rating_star {
+	color: rgba(255, 163, 44, 0.8);
+}
+
 .search-form {
     border-radius: 30px 0px 0px 30px;
 }
