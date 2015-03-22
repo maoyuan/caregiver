@@ -186,7 +186,8 @@
             </div>
             </div>
             <div class = "col-md-3 move-down">                
-                 <div id="pie" style="height:750px;"></div>
+                 <div id="pie" style="height:350px;"></div>
+                 <div id="pie-title" style="text-align:center">Your Recent Nutrition Intake.</div>
             </div>
             
             <div class = "col-md-3 move-down">
@@ -306,7 +307,7 @@ var color = d3.scale.ordinal()
 	.range(["#8a89a6", "#7b6888", "#a05d56", "#ff8c00"]);
 
 
-var dataArr = [{label:"fat 20%", value:"0.2"},{label:"surger 30%", value:"0.3"},{label:"protein 40%", value:"0.4"},{label:"sodium 1%", value:"0.01"}]
+var dataArr = [{label:"fat 20%", value:"0.2"},{label:"Carbs 15%", value:"0.15"},{label:"protein 30%", value:"0.3"},{label:"others 5%", value:"0.05"}]
 change(dataArr);
 
 d3.select(".randomize")
